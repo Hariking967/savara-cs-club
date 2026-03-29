@@ -160,12 +160,14 @@ async function adminLogin() {
 }
 
 async function AddProduct() {
-  await fetch(API + "/api/user/register", {
+  await fetch(API + "/api/products", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      username: username.value,
-      password: password.value,
+      id: id.value,
+      name: prodname.value,
+      price: price.value,
     }),
   });
+  window.location.href = "products.html";
 }
