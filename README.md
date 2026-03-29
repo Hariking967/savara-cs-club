@@ -108,21 +108,6 @@ Bonus points for:
 - 🔍 Deep analysis
 - 🔐 Security explanations
 
----
-
-🛑 Organizer Note
-
-The file below is restricted:
-
-docs/bug_list.pdf
-
-It contains:
-
-- Full bug list
-- Solutions
-- Internal evaluation guide
-
-⚠️ Participants should NOT access this.
 
 ---
 
