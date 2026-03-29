@@ -12,10 +12,10 @@ Welcome to Bug Byte, a full-stack debugging and security challenge designed to t
 
 bug-byte/
 │
-├── clean-version/        # Original working version (no bugs)
-├── bugged-version/       # Contest version (with intentional bugs)
+├── clean-version/ # Original working version (no bugs)
+├── bugged-version/ # Contest version (with intentional bugs)
 ├── docs/
-│   └── bug_list.pdf      # Organizer reference (DO NOT OPEN if participant)
+│ └── bug_list.pdf # Organizer reference (DO NOT OPEN if participant)
 │
 └── README.md
 
@@ -107,7 +107,6 @@ Bonus points for:
 - 💡 Clean fixes
 - 🔍 Deep analysis
 - 🔐 Security explanations
-
 
 ---
 

@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<body>
+  <body>
+    <h2>Admin</h2>
+    <h3>Products</h3>
+    <div id="list"></div>
+    <a href="orders.html">orders</a>
+    <a href="products.html">edit products</a>
 
-<h2>Admin</h2>
-
-<script src="../js/app.js"></script>
-
-<script>
-check("admin");
-
-fetch("http://localhost:5000/api/product")
-.then(r => r.json())
-.then(d => document.body.innerHTML += d.length);
-</script>
-
-</body>
+    <script src="../js/app.js"></script>
+    <script>
+      loadProductsAdmin();
+      check("admin");
+    </script>
+  </body>
 </html>

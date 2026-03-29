@@ -1,21 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h2>Checkout</h2>
 
-<div class="content">
-<h2>Checkout</h2>
+      <input id="email" placeholder="Enter email" />
+      <input id="card" placeholder="Card Number" />
 
-<input id="name" placeholder="Enter email">
-<input id="card">
+      <button onclick="placeOrder()">Pay</button>
 
-<button onclick="placeOrder()">Pay</button>
+      <div id="total"></div>
+    </div>
 
-<p>Total: ₹0</p>
-</div>
-
-<script src="../js/app.js"></script>
-</body>
+    <script src="../js/app.js"></script>
+    <script>
+      const tt = document.getElementById("total");
+      tt.innerHTML = "";
+      const cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+      let sum = 0;
+      cart.forEach((c) => {
+        sum += c.price;
+      });
+      tt.innerHTML += `${sum}`;
+    </script>
+  </body>
 </html>

@@ -1,18 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<body>
+  <body>
+    <div id="list"></div>
 
-<div id="orders"></div>
-
-<script>
-fetch("http://localhost:5000/api/order")
-.then(r => r.json())
-.then(d => {
-  d.forEach(o => {
-    document.body.innerHTML += o.name + " " + o.card;
-  });
-});
-</script>
-
-</body>
+    <script src="../js/app.js"></script>
+    <script>
+      loadOrders();
+    </script>
+  </body>
 </html>
